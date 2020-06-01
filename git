@@ -42,3 +42,25 @@ $ git diff --staged //If you want to see what you’ve staged that will go into 
 and git diff --cached to see what you’ve staged so far (--staged and --cached are synonyms):
 
 git clone https://github.com/ilyasgalacticos/first_project.git
+
+Если вы меняете содержимое файла Main.java, то вы можете обновить содержимое при помощи команд:
+
+git commit -m "My second commit"
+
+Затем уже смело можно отправить изменения на сервер:
+
+git push origin master
+
+4. Запрос изменений с сервера
+
+Если вы сделали изменения в вашем репозитории, другие пользователи могут скачать изменения при помощи команды pull.
+
+git pull origin master
+
+Так как новых коммитов с тех пор, как мы склонировали себе проект, не было, никаких изменений доступных для скачивания нет.
+
+From https://github.com/ilyasgalacticos/first_project
+
+ * branch            master     -> FETCH_HEAD
+
+Already up to date.
