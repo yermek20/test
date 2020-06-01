@@ -1,0 +1,44 @@
+$ git config --global user.name "yermek20"
+$ git config --global user.email yermek20@gmail.com
+
+$ git config --list
+$ git config user.name
+$ git config user.email
+
+$ git help config // opens config.html 
+$ git add -h
+
+for Linux:
+$ cd /home/user/my_project
+
+for macOS:
+$ cd /Users/user/my_project
+
+for Windows:
+$ cd C:/Users/user/my_project
+and type:
+$ git init
+
+$ git add *.c
+$ git add LICENSE
+$ git commit -m 'Initial project version'
+
+В нашем случае у нас только один файл, так что добавим его:
+
+git add Main.java
+
+Если нам нужно добавить все, что находится в директории, мы можем использовать
+
+git add -A
+
+git status
+
+git status -s // short status
+
+git diff //To see what you’ve changed but not yet staged
+
+$ git diff --staged //If you want to see what you’ve staged that will go into your next commit
+
+and git diff --cached to see what you’ve staged so far (--staged and --cached are synonyms):
+
+git clone https://github.com/ilyasgalacticos/first_project.git
